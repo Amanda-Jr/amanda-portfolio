@@ -7,7 +7,6 @@ import theme from "../../../../theme"
 const Hero = () => {
 
     const StyledHero = styled("div")(({theme})=> ({
-        //backgroundColor:" #E3D0EA",
         backgroundColor: theme.palette.primary.main,
         height: "100vh",
         display: "flex",
@@ -45,13 +44,13 @@ const Hero = () => {
                             <Grid container display={"flex"} justifyContent={"center"} spacing={3}>
                                 
                                 <Grid size={{ xs: 12, md: 3 }}  display={"flex"} justifyContent={"center"}>
-                                    <StyledButton>
+                                    <StyledButton onClick ={()=> console.log("contact")} >
                                         <Typography>Contato</Typography>
                                     </StyledButton>
                                 </Grid>
                                 <Grid size={{ xs: 12, md: 3 }}  display={"flex"} justifyContent={"center"}>
                                     
-                                    <StyledButton>
+                                    <StyledButton onClick ={()=> console.log("download")} >
                                         <Typography>Baixar CV</Typography>
                                     </StyledButton>
                                 </Grid>
