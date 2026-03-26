@@ -1,4 +1,5 @@
 import NavBar from "../../components/StyledButton/NavBar/NavBar"
+import About from "./sections/About/About"
 import Hero from "./sections/Hero/Hero"
 
 
@@ -8,6 +9,7 @@ const Home = () => {
     <>
       <NavBar/>      
       <Hero/>
+      <About/>
     </>
   )
 }
